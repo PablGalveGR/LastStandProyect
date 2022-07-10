@@ -1,0 +1,68 @@
+html, body, div.wrapper {
+  margin: 0;
+  height: 100%;
+}
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+}
+/* Style the side navigation */
+.content h1 {
+  margin-bottom: 1.2rem;
+}
+
+.sidenav {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+}
+
+
+/* Side navigation links */
+.sidenav a,
+h3.logged {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.sidenav h3.logged {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+
+.content {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+/*Tables*/ 
+table.scoreTable{
+  width: 50%;
+  text-align: left;
+  font-size: 1.4rem;
+  border:none;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  }
+table.scoreTable tr:nth-child(even), table.scoreTable th {
+  background-color: rgb(210, 210, 210);
+}
+table.scoreTable tr:hover{
+  background-color: rgb(255, 248, 214);
+}
